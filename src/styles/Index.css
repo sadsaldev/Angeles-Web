@@ -31,3 +31,26 @@
 body {
     font-family: var(--font-primary);
 }
+
+.main-title{
+    color: var(--royal-blue);
+    font-weight: 500;
+    text-shadow: 2px 2px 0px #ccc9ff;
+    line-height: 1.2;
+}
+
+.main-button{
+    background-color: var(--royal-blue);
+    color: white;
+    font-weight: 400;
+    border-radius: 25px;
+    padding: 12px 22px;
+}
+
+.main-button:hover{
+    background-color: transparent;
+    color: var(--royal-blue);
+    font-weight: 500;
+    border: 3px solid var(--royal-blue);
+    border-radius: 25px;
+}

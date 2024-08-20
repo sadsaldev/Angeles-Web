@@ -12,16 +12,15 @@ export const Navbar = () => {
 
     return (
         <header style={{ backgroundColor: 'var(--orchid)', padding: '10px', borderBottom:'3px solid var(--medium-turquoise)'}}>
-            <Flex justify="space-between" align="center">
-                
+            <Flex justify="space-between" align="center" paddingLeft={15} paddingRight={15}>
                 {/* Logo */}
                 <div onClick={handleIndex} className="cursor-pointer">
-                    <img src="/path/to/logo.png" alt="Logo" className="w-20" />
+                    <img src="/assets/img/logo.png" alt="Logo" className="w-32" />
                 </div>
 
                 {/* Links */}
                 <nav>
-                    <ul className="flex space-x-8" style={{ color: 'var(--white)' }}> {/* Usando la variable de color */}
+                    <ul className="flex space-x-8" style={{ color: 'var(--white)' }}>
                         <li><NavLink className="hover:underline" to="/">Inicio</NavLink></li>
                         <li><NavLink className="hover:underline" to="/about-us">Sobre Nosotros</NavLink></li>
                         <li><NavLink className="hover:underline" to="/store">Tienda</NavLink></li>
@@ -30,22 +29,22 @@ export const Navbar = () => {
                 </nav>
 
                 {/* Icons */}
-                <Flex className="space-x-4" style={{ color: 'var(--white)' }}> {/* Usando la variable de color */}
+                <Flex className="space-x-3" style={{ color: 'var(--white)' }}> 
                     <IconButton 
                         aria-label="WhatsApp"
-                        icon={<FaWhatsapp />}
+                        icon={<FaWhatsapp size={24} />}
                         variant="ghost"
                         _hover={{ bg: 'transparent' }}
                     />
                     <IconButton 
                         aria-label="User"
-                        icon={<FaUser />}
+                        icon={<FaUser size={20} />}
                         variant="ghost"
                         _hover={{ bg: 'transparent' }}
                     />
                     <IconButton 
                         aria-label="Carrito"
-                        icon={<FaShoppingCart />}
+                        icon={<FaShoppingCart size={24} />}
                         variant="ghost"
                         _hover={{ bg: 'transparent' }}
                     />
