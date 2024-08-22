@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Navbar } from './components/high-level/Navbar';
 import { Footer } from './components/high-level/Footer';
 import { Home } from './components/home/Home';
+import { AboutUs } from './components/about-us/AboutUs';
+import { Contact } from './components/contact/Contact';
 
 function App() {
 
@@ -10,10 +12,10 @@ function App() {
        <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/about-us" />
+          <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<AboutUs />} />
           <Route path="/store" />
-          <Route path="/contact" />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/profile" />
           <Route path="/cart" />
         </Routes>
