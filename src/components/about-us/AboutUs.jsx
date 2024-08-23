@@ -1,6 +1,5 @@
 import { Box, Flex, Heading, Text, Button, Link } from "@chakra-ui/react";
 import { SlideShow } from "./SlideShow";
-import { SlDiamond } from "react-icons/sl";
 
 export const AboutUs = () => {
   return (
@@ -22,13 +21,7 @@ export const AboutUs = () => {
           textAlign={{ base: "center", md: "left" }}
         >
           <Box maxW="100%">
-            <Heading
-              as="h1"
-              mb={6}
-              className="main-title"
-              fontSize={{ base: "2em", sm: "2em", md: "2em", lg: "2em" }}
-              transition="font-size 0.3s ease-in-out"
-            >
+            <Heading as="h1" mb={6} className="main-title" fontSize={{ base: "2em", sm: "2em", md: "2em", lg: "2.5em" }} transition="font-size 0.3s ease-in-out">
               Nuestro Colorido Mundo
             </Heading>
 

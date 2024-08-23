@@ -24,7 +24,7 @@ export const Home = () => {
               as="h1"
               mb={6}
               className="main-title"
-              fontSize={{ base: "4em", sm: "3.5em", md: "3.5em", lg: "4em" }}
+              fontSize={{ base: "3.5em", sm: "3.5em", md: "3.5em", lg: "4em" }}
               transition="font-size 0.3s ease-in-out"
             >
               Obtén hermosos detalles para cualquier ocasión
