@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text, Button, Link, IconButton } from "@chakra-ui/react";
+import { Box, Flex, Heading, Divider, Text, Button, Link, IconButton } from "@chakra-ui/react";
 import { FaWhatsapp, FaEnvelope, FaInstagram } from 'react-icons/fa';
 
 export const Contact = () => {
@@ -25,7 +25,7 @@ export const Contact = () => {
               <Heading as="h1" mb={6} className="main-title" fontSize={{ base: "2em", sm: "2em", md: "2em", lg: "2.5em" }} transition="font-size 0.3s ease-in-out">
                 Contáctanos
               </Heading>
-              <hr className="line"/>
+              <Divider className='line'/>
             </Box>
 
             <Box display='flex' flexDirection='column' gap={5} paddingTop={10} paddingBottom={10}>

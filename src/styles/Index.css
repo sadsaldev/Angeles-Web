@@ -29,10 +29,11 @@
 }
 
 body {
-    font-family: var(--font-primary);
+    font-family: var(--font-primary) !important;
 }
 
 .main-title{
+    font-family: var(--font-primary) !important;
     color: var(--royal-blue) !important;
     font-weight: 500 !important;
     text-shadow: 2px 2px 0px #ccc9ff!important;
@@ -56,6 +57,18 @@ body {
 }
 
 .line {
-    border: 0;
-    border-top: 1px solid black;
+    border: 0 !important;
+    border-top: 1px solid black !important;
+}
+
+.chakra-heading {
+    font-family: var(--font-primary) !important;
+}
+
+.filterItems p{
+    cursor:pointer !important;
+}
+
+.filterItems p:hover{
+    font-weight: 500 !important;
 }

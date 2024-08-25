@@ -11,7 +11,7 @@ export const Navbar = () => {
     };
 
     return (
-        <Box style={{backgroundColor: 'var(--orchid', borderBottom: '3px solid var(--medium-turquoise'}} p={4}>
+        <Box style={{backgroundColor: 'var(--orchid)', borderBottom: '3px solid var(--medium-turquoise)', position: 'sticky', top:'0', zIndex:'10'}} p={4}>
             <Flex justify="space-between" align="center" px={15}>
 
                 {/* Logo */}
