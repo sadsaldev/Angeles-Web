@@ -1,6 +1,20 @@
+import {useState, useEffect} from 'react';
 import { Box, Flex, Heading, Text, Button, Link } from "@chakra-ui/react";
+import {Outlet, useLocation} from 'react-router-dom';
 
 export const Home = () => {
+  const [showForm, setShowForm] = useState(false);
+  const location = useLocation();
+
+  //Cambiar el estado dependiendo de la ruta actual
+  useEffect(() => {
+    if (location.pathname === '/login' || location.pathname === '/signup'){
+      setShowForm(true);
+    } else {
+      setShowForm(false);
+    }
+  }, [location]);
+
   return (
     <Box as="section">
       <Flex
@@ -20,24 +34,30 @@ export const Home = () => {
           textAlign={{ base: "center", md: "left" }}
         >
           <Box maxW="100%">
-            <Heading
-              as="h1"
-              mb={6}
-              className="main-title"
-              fontSize={{ base: "3.5em", sm: "3.5em", md: "3.5em", lg: "4em" }}
-              transition="font-size 0.3s ease-in-out"
-            >
-              Obtén hermosos detalles para cualquier ocasión
-            </Heading>
-            <Text fontSize={{ base: "md", md: "lg" }} color="black">
-              <strong>
-                Ofrecemos una gran variedad de regalos y detalles aptos para
-                cualquier ocasión,
-              </strong>{" "}
-              también puedes personalizar el tuyo como desees con nuestra rápida
-              atención{" "}
-              <strong style={{ color: "var(--royal-blue)" }}>vía WhatsApp</strong>.
-            </Text>
+            {!showForm ? (
+              <>
+                <Heading
+                  as="h1"
+                  mb={6}
+                  className="main-title"
+                  fontSize={{ base: "3.5em", sm: "3.5em", md: "3.5em", lg: "4em" }}
+                  transition="font-size 0.3s ease-in-out"
+                >
+                  Obtén hermosos detalles para cualquier ocasión
+                </Heading>
+                <Text fontSize={{ base: "md", md: "lg" }} color="black">
+                  <strong>
+                    Ofrecemos una gran variedad de regalos y detalles aptos para
+                    cualquier ocasión,
+                  </strong>{" "}
+                  también puedes personalizar el tuyo como desees con nuestra rápida
+                  atención{" "}
+                  <strong style={{ color: "var(--royal-blue)" }}>vía WhatsApp</strong>.
+                </Text>
+              </>
+            ):(
+              <Outlet />
+            )}
           </Box>
         </Box>
 

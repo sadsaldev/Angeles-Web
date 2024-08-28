@@ -56,6 +56,18 @@ body {
     border-radius: 25px !important;
 }
 
+.sub-b{
+    font-weight: 400 !important;
+    background-color: transparent !important;
+    border: 1px solid var(--royal-blue) !important;
+    border-radius: 5px !important;
+}
+
+.sub-b:hover{
+    color: var(--royal-blue) !important;
+    font-weight: 500 !important;
+}
+
 .line {
     border: 0 !important;
     border-top: 1px solid black !important;

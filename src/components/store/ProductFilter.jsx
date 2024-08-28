@@ -36,6 +36,7 @@ export const ProductFilter = () => {
               <Text>Día de la Mujer</Text>
               <Text>Día del Hombre</Text>
               <Text>Corporativo</Text>
+              <Text>Elegante</Text>
             </VStack>
           </Box>
           <Divider className='line'/>

@@ -1,0 +1,182 @@
+[
+    { 
+        "id": 1, 
+        "category": "recomendado", 
+        "festivity": "Elegante", 
+        "title": "Detalle Elegante Whiskey, Rosas & Ferrero Rocher",
+        "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+        "image": "https://dummyimage.com/300x300.png/e1e6ff/000000",
+        "price": "80.000" 
+    },
+    { 
+        "id": 2, 
+        "category": "recomendado", 
+        "festivity":"Día del Padre",
+        "title":"Desayuno Sorpresa Día del Padre", 
+        "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+        "image": "https://dummyimage.com/300x300.png/e1e6ff/000000",
+        "price": "120.000" 
+    },
+    { 
+        "id": 3, 
+        "category": "recomendado", 
+        "festivity":"Infantil", 
+        "title":"Caja Sorpresa Niña con Juguete", 
+        "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+        "image": "https://dummyimage.com/300x300.png/e1e6ff/000000",
+        "price": "80.000" 
+    },
+    { 
+        "id": 4, 
+        "category": "recomendado", 
+        "festivity":"", 
+        "title":"Detalle Flores, Peluche y Set de Perfume + Crema", 
+        "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+        "image": "https://dummyimage.com/300x300.png/e1e6ff/000000",
+        "price": "120.000"
+    },
+    { 
+        "id": 5, 
+        "category": "desayunos-sorpresa", 
+        "festivity":"Infantil", 
+        "title":"Desayuno Sorpresa Para Niña", 
+        "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+        "image": "https://dummyimage.com/300x300.png/e1e6ff/000000",
+        "price": "80.000" 
+    },
+    {
+        "id": 6, 
+        "category": "desayunos-sorpresa", 
+        "festivity":"Día del Padre", 
+        "title":"Desayuno Sorpresa Día del Padre", 
+        "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+        "image": "https://dummyimage.com/300x300.png/e1e6ff/000000",
+        "price": "120.000" 
+    },
+    { 
+        "id": 7, 
+        "category": "desayunos-sorpresa", 
+        "festivity":"Día de la Madre", 
+        "title":"Desayuno Sorpresa Día de la Madre", 
+        "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+        "image": "https://dummyimage.com/300x300.png/e1e6ff/000000",
+        "price": "80.000" 
+    },
+    { 
+        "id": 8, 
+        "category": "desayunos-sorpresa", 
+        "festivity":"Infantil", 
+        "title":"Desayuno Sorpresa Para Niño", 
+        "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+        "image": "https://dummyimage.com/300x300.png/e1e6ff/000000",
+        "price": "120.000" 
+    },
+    { 
+        "id": 9, 
+        "category": "detalles-estandar", 
+        "festivity":"", 
+        "title":"Detalle Peluche + Dulces + Pocillo + Tarjeta",
+        "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+        "image": "https://dummyimage.com/300x300.png/e1e6ff/000000",
+        "price": "80.000" 
+    },
+    { 
+        "id": 10, 
+        "category": "detalles-estandar", 
+        "festivity":"", 
+        "title":"Detalle Merienda + Dulces + Peluche + Tarjeta", 
+        "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+        "image": "https://dummyimage.com/300x300.png/e1e6ff/000000",
+        "price": "120.000" 
+    },
+    { 
+        "id": 11, 
+        "category": "detalles-estandar", 
+        "festivity":"Elegante",
+        "title":"Detalle Elegante Fresas Achocolatadas", 
+        "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+        "image": "https://dummyimage.com/300x300.png/e1e6ff/000000",
+        "price": "80.000" 
+    },
+    { 
+        "id": 12, 
+        "category": "detalles-estandar", 
+        "festivity":"", 
+        "title":"Detalle Loción + Crema + Dulces + Flores + Tarjeta", 
+        "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+        "image": "https://dummyimage.com/300x300.png/e1e6ff/000000",
+        "price": "120.000" 
+    },
+    { 
+        "id": 13, 
+        "category": "cajas-sorpresa", 
+        "festivity":"Infantil", 
+        "title":"Caja Sorpresa para Niña con Juguete", 
+        "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+        "image": "https://dummyimage.com/300x300.png/e1e6ff/000000",
+        "price": "80.000" 
+    },
+    { 
+        "id": 14, 
+        "category": "cajas-sorpresa", 
+        "festivity":"Amor", 
+        "title":"Caja Sorpresa para Pareja con Acordeón de Fotos", 
+        "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+        "image": "https://dummyimage.com/300x300.png/e1e6ff/000000",
+        "price": "120.000" 
+    },
+    { 
+        "id": 15, 
+        "category": "cajas-sorpresa", 
+        "festivity":"Día de la Madre", 
+        "title":"Caja Sorpresa para Mamá con Flores", 
+        "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+        "image": "https://dummyimage.com/300x300.png/e1e6ff/000000",
+        "price": "80.000" 
+    },
+    { 
+        "id": 16, 
+        "category": "cajas-sorpresa", 
+        "festivity":"Día del Padre",
+        "title":"Caja Sorpresa para Papá con Merienda", 
+        "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+        "image": "https://dummyimage.com/300x300.png/e1e6ff/000000",
+        "price": "120.000" 
+    },
+    { 
+        "id": 17, 
+        "category": "variaciones", 
+        "festivity":"", 
+        "title":"Bandeja de Snacks (Dulce, Salado, Mixto)", 
+        "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+        "image": "https://dummyimage.com/300x300.png/e1e6ff/000000",
+        "price": "80.000" 
+    },
+    { 
+        "id": 18, 
+        "category": "variaciones", 
+        "festivity":"", 
+        "title":"Recordatorios", 
+        "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+        "image": "https://dummyimage.com/300x300.png/e1e6ff/000000",
+        "price": "120.000" 
+    },
+    { 
+        "id": 19, 
+        "category": "variaciones", 
+        "festivity":"", 
+        "title":"Pocillos Personalizados", 
+        "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+        "image": "https://dummyimage.com/300x300.png/e1e6ff/000000",
+        "price": "80.000" 
+    },
+    { 
+        "id": 20, 
+        "category": "variaciones", 
+        "festivity":"", 
+        "title":"Caja de Chocolates Artesanal", 
+        "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+        "image": "https://dummyimage.com/300x300.png/e1e6ff/000000",
+        "price": "120.000" 
+    }
+]

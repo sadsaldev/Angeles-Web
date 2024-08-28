@@ -1,6 +1,7 @@
 import { Box, Flex, IconButton, useDisclosure, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, VStack, Link, Text } from '@chakra-ui/react';
 import { FaWhatsapp, FaUser, FaShoppingCart, FaBars } from 'react-icons/fa';
 import { NavLink, useNavigate } from 'react-router-dom';
+import { UserNavbar } from './UserNavbar';
 
 export const Navbar = () => {
     const navigate = useNavigate();
@@ -48,12 +49,7 @@ export const Navbar = () => {
                             _hover={{ bg: 'transparent' }}
                         />
                     </Link>
-                    <IconButton 
-                        aria-label="User"
-                        icon={<FaUser size={20} color='white'/>}
-                        variant="ghost"
-                        _hover={{ bg: 'transparent' }}
-                    />
+                    <UserNavbar />
                     <IconButton 
                         aria-label="Carrito"
                         icon={<FaShoppingCart size={24} color='white'/>}
@@ -64,8 +60,8 @@ export const Navbar = () => {
                     <IconButton
                         display={{ base: "flex", md: "none" }}
                         justifyContent="center"
-                        _hover="none"
-                        _active="none"
+                        _hover={{ bg: 'transparent' }}
+                        _active={{ bg: 'transparent' }}
                         icon={<FaBars color='white'/>}
                         onClick={onOpen}
                         variant="ghost"
