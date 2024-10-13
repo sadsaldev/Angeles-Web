@@ -7,6 +7,8 @@ import { Contact } from './components/contact/Contact';
 import { Main } from './components/store/Main';
 import { ProductDetail } from './components/store/ProductDetail';
 import { LoginForm } from './components/login/MainForm';
+import { SignupForm } from './components/signup/MainForm';
+import { Profile } from './components/profile/Profile';
 
 function App() {
 
@@ -17,13 +19,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}> 
            <Route path="login" element={<LoginForm />}/>
-           <Route path="register" />
+           <Route path="signup" element={<SignupForm />}/>
           </Route>
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/store" element={< Main />}/>
           <Route path='/store/product/:id' element={<ProductDetail />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/profile" />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/cart" />
         </Routes>
         <Footer />

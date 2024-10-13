@@ -1,12 +1,12 @@
 import { Box, Button, Flex, FormControl, FormLabel, Divider, Input,  Heading, Link, Text, VStack } from "@chakra-ui/react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-export const Reset2 = ({ onNextStep, onPrevStep }) => {
+export const MailStep6 = ({prevStep, nextStep}) => {
     return(
         <VStack spacing={8} align="stretch">
-            <FormControl id="number">
+            <FormControl id="mailregister">
                 <FormLabel color="black" fontWeight="bold" mt={2}>
-                    Ingresa el código de verificación que hemos enviado al número de teléfono vía WhatsApp*
+                    Ingresa el código de verificación que te hemos enviado vía WhatsApp*
                 </FormLabel>
                 <Input
                     type="number"
@@ -21,9 +21,9 @@ export const Reset2 = ({ onNextStep, onPrevStep }) => {
                 <Button className="main-b" size="md">Reenviar</Button>
             </Flex>
             <Flex align="center" justify="center" gap={4} marginTop={2}>
-                <Button leftIcon={<FaArrowLeft />} className='sub-b' onClick={onPrevStep}>Volver</Button>
-                <Button rightIcon={<FaArrowRight />}className='sub-b' onClick={onNextStep}>Siguiente</Button>
+                <Button leftIcon={<FaArrowLeft />} className='sub-b' onClick={prevStep}>Volver</Button>
+                <Button rightIcon={<FaArrowRight />}className='sub-b' onClick={nextStep}>Siguiente</Button>
             </Flex>
         </VStack>
-    );
+    )
 }

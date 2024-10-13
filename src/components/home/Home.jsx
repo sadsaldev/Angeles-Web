@@ -1,10 +1,15 @@
 import {useState, useEffect} from 'react';
 import { Box, Flex, Heading, Text, Button, Link } from "@chakra-ui/react";
-import {Outlet, useLocation} from 'react-router-dom';
+import {Outlet, useLocation, useNavigate} from 'react-router-dom';
 
 export const Home = () => {
   const [showForm, setShowForm] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+
+   const handleStore = () => {
+      navigate('/store');
+   }
 
   //Cambiar el estado dependiendo de la ruta actual
   useEffect(() => {
@@ -88,7 +93,7 @@ export const Home = () => {
             </Text>
             <Box display="flex" justifyContent={{ base: "center", md: "end" }} alignItems="center">
 
-              <Button className="main-b" size="lg"mr={4}>Pide Ahora</Button>
+              <Button className="main-b" size="lg"mr={4} onClick={handleStore}>Pide Ahora</Button>
 
               <Link href="https://wa.link/tj5hq1" isExternal aria-label="WhatsApp">
                 <Button className="main-b" size="lg">Contáctanos</Button>

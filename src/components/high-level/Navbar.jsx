@@ -23,16 +23,16 @@ export const Navbar = () => {
                 {/* Links - Hidden on small screens */}
                 <Box display={{ base: "none", md: "flex" }}>
                     <Flex as="nav" color="white" gap={25}>
-                        <NavLink to="/" style={{ textDecoration: 'none' }}>
+                        <NavLink to="/" style={({ isActive }) => ({textDecoration: 'none', fontWeight: isActive ? '700' : '400'})}>
                             <Text _hover={{ fontWeight: '700' }}>Inicio</Text>
                         </NavLink>
-                        <NavLink to="/about-us" style={{ textDecoration: 'none' }}>
-                            <Text _hover={{ fontWeight: '700' }} >Sobre Nosotros</Text>
+                        <NavLink to="/about-us" style={({ isActive }) => ({textDecoration: 'none', fontWeight: isActive ? '700' : '400'})}>
+                            <Text _hover={{ fontWeight: '700' }}>Sobre Nosotros</Text>
                         </NavLink>
-                        <NavLink to="/store" style={{ textDecoration: 'none' }}>
+                        <NavLink to="/store" style={({ isActive }) => ({textDecoration: 'none', fontWeight: isActive ? '700' : '400'})}>
                             <Text _hover={{ fontWeight: '700' }}>Tienda</Text>
                         </NavLink>
-                        <NavLink to="/contact" style={{ textDecoration: 'none' }}>
+                        <NavLink to="/contact" style={({ isActive }) => ({textDecoration: 'none', fontWeight: isActive ? '700' : '400'})}>
                             <Text _hover={{ fontWeight: '700' }}>Contacto</Text>
                         </NavLink>
                     </Flex>
@@ -78,17 +78,17 @@ export const Navbar = () => {
                     <DrawerHeader>Menú</DrawerHeader>
                     <DrawerBody>
                         <VStack align="start">
-                            <NavLink onClick={onClose} to="/" style={{ textDecoration: 'none' }}>
-                                <Text>Inicio</Text>
+                            <NavLink onClick={onClose} to="/" style={({ isActive }) => ({textDecoration: 'none', fontWeight: isActive ? '700' : '400'})}>
+                                <Text _hover={{ fontWeight: '700' }}>Inicio</Text>
                             </NavLink>
-                            <NavLink onClick={onClose} to="/about-us" style={{ textDecoration: 'none' }}>
-                                <Text>Sobre Nosotros</Text>
+                            <NavLink onClick={onClose} to="/about-us" style={({ isActive }) => ({textDecoration: 'none', fontWeight: isActive ? '700' : '400'})}>
+                                <Text _hover={{ fontWeight: '700' }}>Sobre Nosotros</Text>
                             </NavLink>
-                            <NavLink onClick={onClose} to="/store" style={{ textDecoration: 'none' }}>
-                                <Text>Tienda</Text>
+                            <NavLink onClick={onClose} to="/store" style={({ isActive }) => ({textDecoration: 'none', fontWeight: isActive ? '700' : '400'})}>
+                                <Text _hover={{ fontWeight: '700' }}>Tienda</Text>
                             </NavLink>
-                            <NavLink onClick={onClose} to="/contact" style={{ textDecoration: 'none' }}>
-                                <Text>Contacto</Text>
+                            <NavLink onClick={onClose} to="/contact" style={({ isActive }) => ({textDecoration: 'none', fontWeight: isActive ? '700' : '400'})}>
+                                <Text _hover={{ fontWeight: '700' }}>Contacto</Text>
                             </NavLink>
                         </VStack>
                     </DrawerBody>
