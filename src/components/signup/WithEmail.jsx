@@ -8,7 +8,6 @@ import { MailStep6 } from './MailStep6';
 import { MailStep7 } from './MailStep7';    
 
 export const WithEmail = ({ onNextStep, onPrevStep, onCurrentStep }) => {
-    console.log("Paso actual:", onCurrentStep);
 
     return(
         <>

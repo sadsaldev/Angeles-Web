@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Box, Heading } from "@chakra-ui/react";
 import { Signup } from './Signup';
 import { WithEmail } from './WithEmail';
+import { WithTelephone } from './WithTelephone';
 
 export const SignupForm = () => {
     const [option, setOption] = useState('');
@@ -9,14 +10,12 @@ export const SignupForm = () => {
 
     const handleOption = (selectedOption) => {
         setOption(selectedOption); //Guardar opción
-        console.log("Opción seleccionada:", selectedOption);
         nextStep(); //Avanzar al siguiente paso
     };
 
     //Funcion para avanzar al siguiente paso
     const nextStep = () => {
         setCurrentStep(prevStep => prevStep + 1);
-        console.log("Avanzando al paso:", currentStep + 1);
     };
 
     //Funcion para retrodecer de paso
@@ -38,9 +37,8 @@ export const SignupForm = () => {
             )}
             {currentStep >= 2 && option === 'Telephone' && (
                 <>
-                <Heading as="h2" fontSize="2.2em" textAlign="center" mb={6} className="main-title">
-                    Telephone chosen
-                </Heading>
+                <Heading as="h2" fontSize="2.2em" textAlign="center" mb={6} className="main-title">Registrarse</Heading>
+                <WithTelephone onNextStep={nextStep} onPrevStep={prevStep} onCurrentStep={currentStep} />
                 {/* <Reset1 onNextStep={nextStep} onPrevStep={prevStep} /> */}
                 </>
             )}

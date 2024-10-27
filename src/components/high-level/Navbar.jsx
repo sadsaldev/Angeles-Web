@@ -1,6 +1,6 @@
 import { Box, Flex, IconButton, useDisclosure, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, VStack, Link, Text } from '@chakra-ui/react';
 import { FaWhatsapp, FaUser, FaShoppingCart, FaBars } from 'react-icons/fa';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { UserNavbar } from './UserNavbar';
 
 export const Navbar = () => {
@@ -10,6 +10,9 @@ export const Navbar = () => {
     const handleIndex = () => {
         navigate('/');
     };
+
+    const location = useLocation();
+    const isLoginOrSignup = location.pathname === '/login' || location.pathname === '/signup';
 
     return (
         <Box style={{backgroundColor: 'var(--orchid)', borderBottom: '3px solid var(--medium-turquoise)', position: 'sticky', top:'0', zIndex:'10'}} p={4}>
@@ -23,7 +26,7 @@ export const Navbar = () => {
                 {/* Links - Hidden on small screens */}
                 <Box display={{ base: "none", md: "flex" }}>
                     <Flex as="nav" color="white" gap={25}>
-                        <NavLink to="/" style={({ isActive }) => ({textDecoration: 'none', fontWeight: isActive ? '700' : '400'})}>
+                        <NavLink to="/" style={({ isActive }) => ({textDecoration: 'none', fontWeight: isActive ? '700' : '400', fontWeight: isLoginOrSignup ? '700' : '400'})}>
                             <Text _hover={{ fontWeight: '700' }}>Inicio</Text>
                         </NavLink>
                         <NavLink to="/about-us" style={({ isActive }) => ({textDecoration: 'none', fontWeight: isActive ? '700' : '400'})}>
@@ -78,7 +81,7 @@ export const Navbar = () => {
                     <DrawerHeader>Menú</DrawerHeader>
                     <DrawerBody>
                         <VStack align="start">
-                            <NavLink onClick={onClose} to="/" style={({ isActive }) => ({textDecoration: 'none', fontWeight: isActive ? '700' : '400'})}>
+                            <NavLink onClick={onClose} to="/" style={({ isActive }) => ({textDecoration: 'none', fontWeight: isActive ? '700' : '400', fontWeight: isLoginOrSignup ? '700' : '400'})}>
                                 <Text _hover={{ fontWeight: '700' }}>Inicio</Text>
                             </NavLink>
                             <NavLink onClick={onClose} to="/about-us" style={({ isActive }) => ({textDecoration: 'none', fontWeight: isActive ? '700' : '400'})}>
